@@ -12,6 +12,10 @@ const count = ref(0)
     <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
     +
     <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
+    +
+    <a href="https://github.com/eslint/eslint" target="_blank">ESLint</a>
+    +
+    <a href="https://github.com/unocss/unocss" target="_blank">UnoCSS</a>
   </p>
 
   <p>See <code>README.md</code> for more information.</p>

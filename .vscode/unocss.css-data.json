@@ -1,0 +1,15 @@
+{
+  "version": 1.1,
+  "atDirectives": [
+    {
+      "name": "@apply",
+      "description": "UnoCSS transformer for @apply directive",
+      "references": [
+        {
+          "name": "UnoCSS transformer",
+          "url": "https://github.com/unocss/unocss/tree/main/packages/transformer-directives"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "johnsoncodehk.volar",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "johnsoncodehk.vscode-typescript-vue-plugin"
+  ]
+}

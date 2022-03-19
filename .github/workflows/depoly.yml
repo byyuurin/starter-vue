@@ -1,0 +1,31 @@
+name: Deploying to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: pnpm/action-setup@v2.2.1
+        with:
+          version: 6
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: v16
+          registry-url: https://registry.npmjs.org/
+          cache: pnpm
+
+      - run: |
+          pnpm install
+          npx vite build --base=/${{ github.event.repository.name }}/
+          cp dist/index.html dist/404.html
+
+      - uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          BRANCH: gh-pages
+          FOLDER: dist

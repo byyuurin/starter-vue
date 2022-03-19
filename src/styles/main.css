@@ -1,0 +1,41 @@
+html, body, #app {
+  @apply h-full min-h-full;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply theme-container;
+}
+
+::-webkit-scrollbar {
+  @apply w-3;
+}
+
+::-webkit-scrollbar:horizontal {
+  @apply h-3;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb {
+  @apply rounded-xl;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  @apply bg-true-gray-500/10;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-true-gray-500/10;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-true-gray-500/30;
+}
+
+::-webkit-scrollbar-thumb:active {
+  @apply bg-true-gray-500/20;
+}
+

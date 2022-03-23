@@ -45,14 +45,14 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/byyuurin/vue-starter/generate).
+[Create a repo from this template on GitHub](https://github.com/byyuurin/starter-vue/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit byyuurin/vue-starter my-vue-app
+npx degit byyuurin/starter-vue my-vue-app
 cd my-vue-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```

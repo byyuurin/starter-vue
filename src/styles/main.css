@@ -1,8 +1,5 @@
 html, body, #app {
-  @apply h-full min-h-full;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply h-full min-h-full antialiased;
 }
 
 body {
@@ -10,11 +7,11 @@ body {
 }
 
 ::-webkit-scrollbar {
-  @apply w-3;
+  @apply w-12px;
 }
 
 ::-webkit-scrollbar:horizontal {
-  @apply h-3;
+  @apply h-10px;
 }
 
 ::-webkit-scrollbar-track,

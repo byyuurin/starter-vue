@@ -4,8 +4,8 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AppHeader: typeof import('./components/AppHeader.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
-    PageHeader: typeof import('./components/PageHeader.vue')['default']
     ToggleTheme: typeof import('./components/ToggleTheme.vue')['default']
   }
 }

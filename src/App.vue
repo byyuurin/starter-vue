@@ -13,7 +13,7 @@ watch(() => route.meta, (meta) => {
 
 <template>
   <div font-sans flex="~ col" h-full overflow-auto>
-    <page-header />
+    <app-header />
     <div flex="grow">
       <div w-full min-h-full>
         <router-view />

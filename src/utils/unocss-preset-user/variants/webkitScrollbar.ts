@@ -17,7 +17,7 @@ const variantScrollbarMap = {
   // 当同时有垂直滚动条和水平滚动条时交汇的部分.
   'scrollbar-corner': '-webkit-scrollbar-corner',
   // 某些元素的corner部分的部分样式(例:textarea的可拖动按钮).
-  'scrollbar-resizer': '-webkit-resizer'
+  'scrollbar-resizer': '-webkit-resizer',
 }
 
 const variants: Variant[] = []
@@ -31,7 +31,7 @@ Object.entries(variantScrollbarMap).forEach(([key, value]) => {
 
     return {
       matcher: matcher.slice(prefix.length),
-      selector: s => values.map(v => `${s}::${v}`).join(',')
+      selector: s => values.map(v => `${s}::${v}`).join(','),
     }
   })
 })

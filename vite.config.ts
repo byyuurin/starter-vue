@@ -12,12 +12,12 @@ export default defineConfig({
   plugins: [
     autoImport({
       imports: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
-      dts: './src/auto-imports.d.ts'
+      dts: './src/auto-imports.d.ts',
     }),
     unocss(),
     pages(),
     vue(),
-    vueComponents({ dts: './src/components.d.ts' })
+    vueComponents({ dts: './src/components.d.ts' }),
   ],
-  build
+  build,
 })

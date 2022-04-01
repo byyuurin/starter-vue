@@ -11,12 +11,12 @@ export default defineConfig({
         display: 'inline-block',
         width: '1.2em',
         height: '1.2em',
-        verticalAlign: 'middle'
-      }
+        verticalAlign: 'middle',
+      },
     }),
     presetWind(),
-    presetUser()
+    presetUser(),
   ],
   transformers: [transformerDirective()],
-  safelist: []
+  safelist: [],
 })

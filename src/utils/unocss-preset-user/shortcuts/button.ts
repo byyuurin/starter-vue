@@ -23,7 +23,7 @@ export default defineShortcuts([
         disabled:text-{c}-700/50
         disabled:dark:text-{c}-400/50
         disabled:ring-offset-{c}-500/50
-      `.replace(/{c}/g, c))
+      `.replace(/{c}/g, c)),
   ],
   [
     /^(?:btn|button)(?:-(.*))?$/, ([, c = baseColor]) =>
@@ -36,10 +36,10 @@ export default defineShortcuts([
         disabled:dark:bg-opacity-25
         disabled:text-opacity-95
         disabled:dark:text-opacity-30
-      `.replace(/{c}/g, c))
+      `.replace(/{c}/g, c)),
   ],
   [
     /^icon-(?:btn|button)$/, () =>
-      extendButton('opacity-75 hover:opacity-100 disabled:opacity-25')
-  ]
+      extendButton('opacity-75 hover:opacity-100 disabled:opacity-25'),
+  ],
 ])

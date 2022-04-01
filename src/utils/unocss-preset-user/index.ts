@@ -12,7 +12,7 @@ const presetUser = (options: PresetUserOptions = {}): Preset => {
     theme,
     variants,
     shortcuts,
-    options
+    options,
   }
 }
 

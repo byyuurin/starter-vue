@@ -17,9 +17,9 @@ const buildOptions: BuildOptions = {
         const template = '[name].[hash].js'
         if (nameREG.test(info.name))return replace(template, info.name)
         return template
-      }
-    }
-  }
+      },
+    },
+  },
 }
 
 export default buildOptions

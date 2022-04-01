@@ -1,3 +1,3 @@
 export const colors = {
-  vue: '#42b983'
+  vue: '#42b983',
 }

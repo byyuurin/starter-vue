@@ -5,7 +5,7 @@
       <span pl-2>Starter</span>
     </router-link>
     <div flex="~ gap-2" items-center>
-      <a icon-btn i-mdi-github text-2xl href="https://github.com/byyuurin/vue-starter" target="_blank" />
+      <a icon-btn i-mdi-github text-2xl href="https://github.com/byyuurin/starter-vue" target="_blank" />
       <toggle-theme text-2xl />
     </div>
   </nav>

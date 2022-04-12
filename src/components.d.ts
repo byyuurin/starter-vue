@@ -2,10 +2,12 @@
 // We suggest you to commit this file into source control
 // Read more: https://github.com/vuejs/vue-next/pull/3399
 
-declare module 'vue' {
+declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppHeader: typeof import('./components/AppHeader.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     ToggleTheme: typeof import('./components/ToggleTheme.vue')['default']
   }
 }

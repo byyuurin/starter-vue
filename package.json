@@ -10,26 +10,26 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@vueuse/core": "^8.2.3",
+    "@vueuse/core": "^8.2.5",
     "@vueuse/head": "^0.7.5",
-    "vue": "^3.2.31",
+    "vue": "^3.2.32",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
-    "@byyuurin/eslint-config": "^0.4.3",
-    "@iconify/json": "^2.1.23",
-    "@unocss/reset": "^0.30.8",
-    "@unocss/transformer-directives": "^0.30.8",
+    "@byyuurin/eslint-config": "^0.5.0",
+    "@iconify/json": "^2.1.27",
+    "@unocss/reset": "^0.31.0",
+    "@unocss/transformer-directives": "^0.31.0",
     "@vitejs/plugin-vue": "^2.3.1",
-    "eslint": "^8.12.0",
-    "pnpm": "^6.32.4",
+    "eslint": "^8.13.0",
+    "pnpm": "^6.32.6",
     "typescript": "^4.6.3",
-    "unocss": "^0.30.8",
-    "unplugin-auto-import": "^0.6.9",
-    "unplugin-vue-components": "^0.18.5",
+    "unocss": "^0.31.0",
+    "unplugin-auto-import": "^0.7.0",
+    "unplugin-vue-components": "^0.19.2",
     "vite": "^2.9.1",
     "vite-plugin-pages": "^0.22.0",
-    "vitest": "^0.8.1",
-    "vue-tsc": "^0.33.9"
+    "vitest": "^0.9.3",
+    "vue-tsc": "^0.34.5"
   }
 }

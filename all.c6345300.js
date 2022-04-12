@@ -1,1 +1,0 @@
-import{_ as o,o as c,c as s,b as e,a as _}from"./assets/index.5194f22b.js";const t={},a={h:"600px","max-h":"75vh",flex:"","justify-center":"","items-center":""},n=_("span",{"text-4xl":""},"Page Not Found",-1),r=[n];function f(i,d){return c(),s("div",a,r)}typeof e=="function"&&e(t);var x=o(t,[["render",f]]);export{x as default};

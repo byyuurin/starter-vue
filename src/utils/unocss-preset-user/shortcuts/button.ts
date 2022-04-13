@@ -7,7 +7,6 @@ disabled:cursor-default
 disabled:pointer-events-none
 ${appends}`
 
-
 const baseColor = 'teal'
 
 export default defineShortcuts([

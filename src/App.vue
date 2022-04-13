@@ -10,7 +10,6 @@ watch(() => route.meta, (meta) => {
 })
 </script>
 
-
 <template>
   <div font-sans flex="~ col" h-full overflow-auto>
     <app-header />

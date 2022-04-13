@@ -6,6 +6,7 @@ specifiers:
   '@unocss/reset': ^0.31.0
   '@unocss/transformer-directives': ^0.31.0
   '@vitejs/plugin-vue': ^2.3.1
+  '@vue/runtime-core': ^3.2.32
   '@vueuse/core': ^8.2.5
   '@vueuse/head': ^0.7.5
   eslint: ^8.13.0
@@ -33,6 +34,7 @@ devDependencies:
   '@unocss/reset': 0.31.0
   '@unocss/transformer-directives': 0.31.0
   '@vitejs/plugin-vue': 2.3.1_vite@2.9.1+vue@3.2.32
+  '@vue/runtime-core': 3.2.32
   eslint: 8.13.0
   pnpm: 6.32.6
   typescript: 4.6.3
@@ -514,7 +516,7 @@ packages:
       '@volar/source-map': 0.34.5
       '@volar/vue-code-gen': 0.34.5
       '@vue/compiler-sfc': 3.2.32
-      '@vue/reactivity': 3.2.31
+      '@vue/reactivity': 3.2.32
     dev: true
 
   /@vue/compiler-core/3.2.32:
@@ -564,24 +566,16 @@ packages:
       estree-walker: 2.0.2
       magic-string: 0.25.9
 
-  /@vue/reactivity/3.2.31:
-    resolution: {integrity: sha512-HVr0l211gbhpEKYr2hYe7hRsV91uIVGFYNHj73njbARVGHQvIojkImKMaZNDdoDZOIkMsBc9a1sMqR+WZwfSCw==}
-    dependencies:
-      '@vue/shared': 3.2.31
-    dev: true
-
   /@vue/reactivity/3.2.32:
     resolution: {integrity: sha512-4zaDumuyDqkuhbb63hRd+YHFGopW7srFIWesLUQ2su/rJfWrSq3YUvoKAJE8Eu1EhZ2Q4c1NuwnEreKj1FkDxA==}
     dependencies:
       '@vue/shared': 3.2.32
-    dev: false
 
   /@vue/runtime-core/3.2.32:
     resolution: {integrity: sha512-uKKzK6LaCnbCJ7rcHvsK0azHLGpqs+Vi9B28CV1mfWVq1F3Bj8Okk3cX+5DtD06aUh4V2bYhS2UjjWiUUKUF0w==}
     dependencies:
       '@vue/reactivity': 3.2.32
       '@vue/shared': 3.2.32
-    dev: false
 
   /@vue/runtime-dom/3.2.32:
     resolution: {integrity: sha512-AmlIg+GPqjkNoADLjHojEX5RGcAg+TsgXOOcUrtDHwKvA8mO26EnLQLB8nylDjU6AMJh2CIYn8NEgyOV5ZIScQ==}
@@ -600,10 +594,6 @@ packages:
       '@vue/shared': 3.2.32
       vue: 3.2.32
     dev: false
-
-  /@vue/shared/3.2.31:
-    resolution: {integrity: sha512-ymN2pj6zEjiKJZbrf98UM2pfDd6F2H7ksKw7NDt/ZZ1fh5Ei39X5tABugtT03ZRlWd9imccoK0hE8hpjpU7irQ==}
-    dev: true
 
   /@vue/shared/3.2.32:
     resolution: {integrity: sha512-bjcixPErUsAnTQRQX4Z5IQnICYjIfNCyCl8p29v1M6kfVzvwOICPw+dz48nNuWlTOOx2RHhzHdazJibE8GSnsw==}

@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@vueuse/core": "^8.2.5",
-    "@vueuse/head": "^0.7.5",
+    "@vueuse/head": "^0.7.6",
     "vue": "^3.2.32",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
-    "@byyuurin/eslint-config": "^0.5.0",
+    "@byyuurin/eslint-config": "^0.5.1",
     "@iconify/json": "^2.1.28",
     "@unocss/reset": "^0.31.2",
     "@unocss/transformer-directives": "^0.31.2",

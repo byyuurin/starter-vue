@@ -31,7 +31,7 @@ Object.entries(variantScrollbarMap).forEach(([key, value]) => {
 
     return {
       matcher: matcher.slice(prefix.length),
-      selector: s => values.map(v => `${s}::${v}`).join(','),
+      selector: (s) => values.map((v) => `${s}::${v}`).join(','),
     }
   })
 })

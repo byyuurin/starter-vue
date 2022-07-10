@@ -11,6 +11,8 @@ const count = ref(0)
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
     +
+    <a href="https://github.com/editorconfig/editorconfig-vscode" target="_blank">EditorConfig</a>
+    +
     <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
     +
     <a href="https://github.com/eslint/eslint" target="_blank">ESLint</a>

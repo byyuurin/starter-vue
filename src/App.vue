@@ -11,12 +11,8 @@ watch(() => route.meta, (meta) => {
 </script>
 
 <template>
-  <div font-sans flex="~ col" h-full overflow-auto>
-    <app-header />
-    <div flex="grow">
-      <div w-full min-h-full>
-        <router-view />
-      </div>
-    </div>
+  <div bg-base color-base font-sans min-h-full>
+    <AppHeader />
+    <router-view />
   </div>
 </template>

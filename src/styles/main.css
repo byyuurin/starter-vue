@@ -2,12 +2,16 @@ html, body, #app {
   @apply h-full min-h-full antialiased;
 }
 
-body {
-  @apply theme-container;
+html {
+  overflow-y: overlay;
+}
+
+* {
+  scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
-  @apply w-12px;
+  @apply w-12px bg-transparent;
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -20,19 +24,14 @@ body {
   @apply rounded-xl;
 }
 
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-corner {
-  @apply bg-true-gray-500/10;
-}
-
 ::-webkit-scrollbar-thumb {
-  @apply bg-true-gray-500/10;
+  @apply border-3 border-transparent bg-true-gray-500/10 bg-clip-content;
 }
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-true-gray-500/30;
+  @apply bg-true-gray-500/25;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  @apply bg-true-gray-500/20;
+  @apply bg-true-gray-500/40;
 }
 

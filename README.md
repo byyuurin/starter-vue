@@ -19,7 +19,7 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 
 ## Features
 
-- [Vue3](https://github.com/vuejs/core), [Vite2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [esbuild](https://github.com/evanw/esbuild)
+- [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [esbuild](https://github.com/evanw/esbuild)
 - File based routing
 - Components auto importing
 - [UnoCSS](https://github.com/unocss/unocss)

@@ -6,6 +6,7 @@
     "preview": "vite preview --port 80",
     "dev": "vite --port 80",
     "lint": "eslint .",
+    "lintf": "eslint . --fix",
     "typecheck": "vue-tsc --noEmit",
     "test": "vitest"
   },
@@ -23,6 +24,8 @@
     "@vitejs/plugin-vue": "^3.0.1",
     "eslint": "^8.20.0",
     "pnpm": "^7.5.2",
+    "postcss": "^8.4.14",
+    "postcss-nested": "^5.0.6",
     "typescript": "^4.7.4",
     "unocss": "^0.44.5",
     "unplugin-auto-import": "^0.9.3",
@@ -34,5 +37,11 @@
   },
   "eslintConfig": {
     "extends": "@byyuurin"
+  },
+  "postcss": {
+    "map": false,
+    "plugins": {
+      "postcss-nested": {}
+    }
   }
 }

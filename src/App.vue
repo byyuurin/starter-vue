@@ -13,6 +13,6 @@ watch(() => route.meta, (meta) => {
 <template>
   <div bg-base color-base font-sans min-h-full>
     <AppHeader />
-    <router-view />
+    <RouterView />
   </div>
 </template>

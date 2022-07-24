@@ -1,7 +1,7 @@
 {
   "prettier.enable": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
   },
   "eslint.validate": [
     "javascript",
@@ -15,8 +15,8 @@
     "jsonc",
     "json5",
     "yml",
-    "yaml"
+    "yaml",
   ],
   "css.lint.unknownAtRules": "ignore",
-  "css.customData": [".vscode/unocss.css-data.json"]
+  "css.customData": [".vscode/unocss.css-data.json"],
 }

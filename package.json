@@ -11,29 +11,29 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@vueuse/core": "^8.9.4",
-    "@vueuse/head": "^0.7.7",
+    "@vueuse/core": "^9.0.2",
+    "@vueuse/head": "^0.7.8",
     "vue": "^3.2.37",
-    "vue-router": "^4.1.2"
+    "vue-router": "^4.1.3"
   },
   "devDependencies": {
     "@byyuurin/eslint-config": "^0.8.4",
-    "@iconify/json": "^2.1.81",
-    "@unocss/reset": "^0.44.5",
-    "@unocss/transformer-directives": "^0.44.5",
+    "@iconify/json": "^2.1.85",
+    "@unocss/reset": "^0.45.1",
+    "@unocss/transformer-directives": "^0.45.1",
     "@vitejs/plugin-vue": "^3.0.1",
     "eslint": "^8.20.0",
-    "pnpm": "^7.6.0",
+    "pnpm": "^7.7.1",
     "postcss": "^8.4.14",
     "postcss-nested": "^5.0.6",
     "typescript": "^4.7.4",
-    "unocss": "^0.44.5",
-    "unplugin-auto-import": "^0.10.0",
-    "unplugin-vue-components": "^0.21.1",
-    "vite": "^3.0.2",
+    "unocss": "^0.45.1",
+    "unplugin-auto-import": "^0.10.3",
+    "unplugin-vue-components": "^0.21.2",
+    "vite": "^3.0.4",
     "vite-plugin-pages": "^0.25.0",
-    "vitest": "^0.19.0",
-    "vue-tsc": "^0.39.0"
+    "vitest": "^0.19.1",
+    "vue-tsc": "^0.39.2"
   },
   "eslintConfig": {
     "extends": "@byyuurin"

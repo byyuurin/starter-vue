@@ -6,7 +6,7 @@
     </RouterLink>
     <div flex="~ gap-2" items-center>
       <a btn="~ iconify" i-mdi-github text-2xl href="https://github.com/byyuurin/starter-vue" target="_blank"></a>
-      <ToggleTheme text-2xl />
+      <AppThemeToggle text-2xl />
     </div>
   </nav>
 </template>

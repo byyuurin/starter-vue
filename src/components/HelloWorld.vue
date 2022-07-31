@@ -30,7 +30,7 @@ const count = ref(0)
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
   </p>
 
-  <button btn my-2 type="button" @click="count++">
+  <button btn="~ base" my-2 type="button" @click="count++">
     count is: {{ count }}
   </button>
   <p>

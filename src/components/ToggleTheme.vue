@@ -4,8 +4,9 @@ import { toggleDark } from '/src/composables/shared'
 
 <template>
   <button
-    icon-btn text="yellow-400 dark:white"
-    i-ph-sun-bold dark:i-ph-moon-duotone
+    p="!none"
+    btn="~ yellow-50 dark:iconify"
+    i="ph-sun-bold dark:ph-moon-duotone"
     @click="() => toggleDark()"
   ></button>
 </template>

@@ -2,6 +2,8 @@
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+const colors = ['btn-teal', 'btn-green', 'btn-emerald', 'btn-green', 'btn-lime', 'btn-yellow', 'btn-amber', 'btn-orange', 'btn-red', 'btn-rose', 'btn-pink', 'btn-fuchsia', 'btn-purple', 'btn-violet', 'btn-indigo', 'btn-blue', 'btn-sky', 'btn-cyan']
+const buttonColor = computed(() => colors[Math.floor(count.value / 3)] || 'btn-base')
 </script>
 
 <template>
@@ -30,9 +32,16 @@ const count = ref(0)
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
   </p>
 
-  <button btn="~ base" my-2 type="button" @click="count++">
-    count is: {{ count }}
-  </button>
+  <div py-2 flex="~ gap-2" justify-center items-start>
+    <button
+      btn="~" type="button" :class="buttonColor" @click="count++"
+    >
+      count is: {{ count }}
+    </button>
+    <button btn="~ true-gray-50" self-center :disabled="count <= 0" @click="count = 0">
+      Reset
+    </button>
+  </div>
   <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.

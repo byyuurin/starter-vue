@@ -1,0 +1,1 @@
+import{_ as o,o as c,c as s,b as e,a as _}from"./assets/index.ef151884.js";const t={},n={h:"600px","max-h":"75vh",flex:"","justify-center":"","items-center":""},a=_("span",{"text-4xl":""},"Page Not Found",-1),r=[a];function f(i,d){return c(),s("div",n,r)}typeof e=="function"&&e(t);const x=o(t,[["render",f]]);export{x as default};

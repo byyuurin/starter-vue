@@ -7,44 +7,38 @@ const buttonColor = computed(() => colors[Math.floor(count.value / 3)] || 'btn-b
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>
+    {{ msg }}
+  </h1>
 
-  <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-    +
-    <a href="https://github.com/editorconfig/editorconfig-vscode" target="_blank">EditorConfig</a>
-    +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    +
-    <a href="https://github.com/eslint/eslint" target="_blank">ESLint</a>
-    +
-    <a href="https://github.com/unocss/unocss" target="_blank">UnoCSS</a>
-  </p>
-
-  <p>See <code>README.md</code> for more information.</p>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Docs
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-  </p>
-
-  <div py-2 flex="~ gap-2" justify-center items-start>
-    <button
-      btn="~" type="button" :class="buttonColor" @click="count++"
-    >
-      count is: {{ count }}
-    </button>
-    <button btn="~ true-gray-50" self-center :disabled="count <= 0" @click="count = 0">
-      Reset
-    </button>
+  <div p-4 py-8>
+    <div p-4 flex="~ gap-2" justify-center items-start>
+      <button
+        btn="~" type="button" :class="buttonColor" @click="count++"
+      >
+        count is: {{ count }}
+      </button>
+      <button btn="~ true-gray-50" self-center :disabled="count <= 0" @click="count = 0">
+        Reset
+      </button>
+    </div>
+    <p>
+      Edit
+      <code>components/HelloWorld.vue</code> to test HMR
+    </p>
   </div>
+
   <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
+    Check out
+    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite starter
+  </p>
+  <p>
+    Install
+    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
+    in your IDE for a better DX
+  </p>
+  <p text-gray-500>
+    Click on the Vite, Vue and UnoCSS logos to learn more
   </p>
 </template>
 

@@ -49,10 +49,6 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 
 ## Try it now!
 
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/byyuurin/starter-vue/generate).
-
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history

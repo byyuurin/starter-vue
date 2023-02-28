@@ -1,5 +1,5 @@
 html, body, #app {
-  @apply h-full min-h-full antialiased;
+  --uno: h-full min-h-full antialiased;
 }
 
 html {
@@ -11,27 +11,27 @@ html {
 }
 
 ::-webkit-scrollbar {
-  @apply w-12px bg-transparent;
+  --uno: w-12px bg-transparent;
 }
 
 ::-webkit-scrollbar:horizontal {
-  @apply h-10px;
+  --uno: h-10px;
 }
 
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-corner,
 ::-webkit-scrollbar-thumb {
-  @apply rounded-xl;
+  --uno: rounded-xl;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply border-3 border-transparent bg-true-gray-500/10 bg-clip-content;
+  --uno: border-3 border-transparent bg-true-gray-500/10 bg-clip-content;
 }
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-true-gray-500/25;
+  --uno: bg-true-gray-500/25;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  @apply bg-true-gray-500/40;
+  --uno: bg-true-gray-500/40;
 }
 

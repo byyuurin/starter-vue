@@ -44,18 +44,18 @@ const buttonColor = computed(() => colors[Math.floor(count.value / 3)] || 'btn-b
 
 <style scoped>
 h1 {
-  @apply text-4xl leading-2em;
+  --uno: text-4xl leading-2em;
 }
 
 p {
-  @apply leading-2em;
+  --uno: leading-2em;
 }
 
 a {
-  @apply text-vue;
+  --uno: text-vue;
 }
 
 code {
-  @apply bg-gray-500/10 dark:bg-gray-500/25 text-[#304455] dark:text-light-900 p-4px py-2px rounded-4px;
+  --uno: bg-gray-500/10 dark:bg-gray-500/25 text-[#304455] dark:text-light-900 p-4px py-2px rounded-4px;
 }
 </style>

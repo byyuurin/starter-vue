@@ -4,12 +4,51 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/starter-vue/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue 3 + TypeScript + Vite + UnoCSS</title>
-    <script type="module" crossorigin src="/starter-vue/assets/index-f331443e.js"></script>
-    <link rel="stylesheet" href="/starter-vue/assets/index.a5a2f437.css">
+    <title>Vue Starter</title>
+    <script type="module" crossorigin src="/starter-vue/assets/index-43e4c6c2.js"></script>
+    <link rel="stylesheet" href="/starter-vue/assets/index.b3ef503b.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <style>
+        @keyframes pulse-alt {
+          from { transform: scale3d(1, 1, 1); }
+          50% { transform: scale3d(1.05, 1.05, 1.05); }
+          to { transform: scale3d(1, 1, 1); }
+        }
+        * { padding: 0; margin: 0; }
+        #app .loading {
+          position: fixed;
+          z-index: 1;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          user-select: none;
+        }
+        #app h2,
+        #app p {
+          padding: 0.25rem;
+          text-align: center;
+        }
+        #app h2 {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          font-weight: 800;
+        }
+        #app img {
+          pointer-events: none;
+          width: 100px;
+          animation: pulse-alt 1s ease-in-out infinite;
+        }
+      </style>
+      <div class="loading">
+        <img src="/starter-vue/vite.svg" class="animate-pulse-alt" />
+        <h2>Loading...</h2>
+        <p>This may take a few seconds, please don't close this page.</p>
+      </div>
     
   </body>
 </html>

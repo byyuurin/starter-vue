@@ -11,7 +11,7 @@ const buttonColor = computed(() => colors[Math.floor(count.value / 3)] || 'btn-b
     {{ msg }}
   </h1>
   <div p-4 py-8>
-    <div p-4 flex="~ gap-2" justify-center items-start>
+    <div flex="~ gap-2" items-start justify-center p-4>
       <button
         btn="~" type="button" :class="buttonColor" @click="count++"
       >

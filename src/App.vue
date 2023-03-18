@@ -4,7 +4,7 @@ useHead({ title, titleTemplate })
 </script>
 
 <template>
-  <div bg-base color-base font-sans min-h-full>
+  <div min-h-full font-sans bg-base color-base>
     <AppHeader />
     <RouterView />
   </div>

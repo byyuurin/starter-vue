@@ -1,3 +1,4 @@
+import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 
 import autoImport from 'unplugin-auto-import/vite'
@@ -19,5 +20,11 @@ export default defineConfig({
     vue(),
     vueComponents({ dts: './src/components.d.ts' }),
   ],
+  resolve: {
+    alias: {
+      '~/': `${resolve(__dirname, './src')}/`,
+      '@/': `${resolve(__dirname, './src')}/`,
+    },
+  },
   build,
 })

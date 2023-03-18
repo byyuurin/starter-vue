@@ -1,6 +1,6 @@
 <route lang="yaml">
 meta:
-  title: Vue Starter
+  title: Home
 </route>
 
 <template>

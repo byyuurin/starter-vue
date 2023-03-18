@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { toggleDark } from '/src/composables'
+import { toggleDark } from '~/composables'
 </script>
 
 <template>

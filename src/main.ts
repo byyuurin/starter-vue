@@ -1,18 +1,13 @@
-import '@unocss/reset/tailwind.css'
+import '@unocss/reset/tailwind-compat.css'
 import 'uno.css'
-import '/src/styles/main.css'
-
+import './styles/main.css'
 import { createApp } from 'vue'
 import { createHead } from '@vueuse/head'
-import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
-import routes from '~pages'
+import router from './router'
 
-const head = createHead()
+const app = createApp(App)
 
-const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
-})
-
-createApp(App).use(head).use(router).mount('#app')
+app.use(createHead())
+app.use(router)
+app.mount('#app')

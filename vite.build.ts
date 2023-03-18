@@ -1,6 +1,6 @@
 import type { BuildOptions } from 'vite'
 
-const nameREG = /([_])[.]{3}([^.]+)\1(.css)?/
+const nameREG = /([_])(?:[.]{3})?([^.]+)\1(.css)?/
 const replace = (template: string, value: string) => template.replace(/\[name\]/, value.replace(nameREG, '$2'))
 
 const buildOptions: BuildOptions = {

@@ -12,7 +12,6 @@ const router = useRouter()
     <div px-5 py-10 flex="~ col gap-4" justify-center items-center>
       <i text-8xl i-twemoji-crying-face></i>
       <span text-4xl>Page Not Found</span>
-
       <button btn="~ base" @click="router.replace({ path: '/' })">
         Back
       </button>

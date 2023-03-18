@@ -1,11 +1,11 @@
 import { defineConfig, presetAttributify, presetIcons, presetWind, transformerDirectives, transformerVariantGroup } from 'unocss'
 import { parseColor } from '@unocss/preset-mini/utils'
 
-const buttonUnsupportedColors = ['vue', 'black', 'dark', 'white', 'light']
+const buttonUnsupportedColors = new Set(['vue', 'black', 'dark', 'white', 'light'])
 function resolveColor(name: string, no: number, prefix?: string) {
   const temp = [prefix, name]
 
-  if (!buttonUnsupportedColors.includes(name))
+  if (!buttonUnsupportedColors.has(name))
     temp.push(String(no))
 
   return temp.filter(Boolean).join('-')
@@ -35,24 +35,25 @@ export default defineConfig({
         const themeColorRank = no === 'DEFAULT' ? 400 : Number(no)
 
         if (!color || color === c) return // invalid color
-        if (buttonUnsupportedColors.includes(themeColor)) return // unsupported
+        if (buttonUnsupportedColors.has(themeColor)) return // unsupported
 
         const colorRank = themeColorRank >= 700
           ? { background: 700, hover: 800, active: 900, text: 200 }
-          : themeColorRank <= 200
-            ? { background: 400, hover: 500, active: 600, text: 100 }
-            : { background: 600, hover: 700, active: 800, text: 50 }
+          : (themeColorRank <= 200
+              ? { background: 400, hover: 500, active: 600, text: 100 }
+              : { background: 600, hover: 700, active: 800, text: 50 })
 
         const applies = ['disabled:opacity-50']
-        applies.push(resolveColor(themeColor, colorRank.text, 'text'))
-        applies.push(resolveColor(themeColor, colorRank.background, 'bg'))
-        applies.push(resolveColor(themeColor, colorRank.hover, 'hover:bg'))
-        applies.push(resolveColor(themeColor, colorRank.active, 'active:bg'))
 
-        if (opacity) {
-          applies.push(`text-opacity-${opacity}`)
-          applies.push(`bg-opacity-${opacity}`)
-        }
+        applies.push(
+          resolveColor(themeColor, colorRank.text, 'text'),
+          resolveColor(themeColor, colorRank.background, 'bg'),
+          resolveColor(themeColor, colorRank.hover, 'hover:bg'),
+          resolveColor(themeColor, colorRank.active, 'active:bg'),
+        )
+
+        if (opacity)
+          applies.push(`text-opacity-${opacity}`, `bg-opacity-${opacity}`)
 
         return applies.join(' ')
       },

@@ -10,7 +10,6 @@ const buttonColor = computed(() => colors[Math.floor(count.value / 3)] || 'btn-b
   <h1>
     {{ msg }}
   </h1>
-
   <div p-4 py-8>
     <div p-4 flex="~ gap-2" justify-center items-start>
       <button
@@ -27,7 +26,6 @@ const buttonColor = computed(() => colors[Math.floor(count.value / 3)] || 'btn-b
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
   </div>
-
   <p>
     Check out
     <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite starter

@@ -1,5 +1,5 @@
-import { defineConfig, presetAttributify, presetIcons, presetWind, transformerDirectives, transformerVariantGroup } from 'unocss'
 import { parseColor } from '@unocss/preset-mini/utils'
+import { defineConfig, presetAttributify, presetIcons, presetWind, transformerDirectives, transformerVariantGroup } from 'unocss'
 
 const buttonUnsupportedColors = new Set(['vue', 'black', 'dark', 'white', 'light'])
 function resolveColor(name: string, no: number, prefix?: string) {
@@ -34,8 +34,10 @@ export default defineConfig({
         const themeColor = match.replace(/^btn-(.+)$/, '$1').replace(/([-:/]\d+)+$/, '')
         const themeColorRank = no === 'DEFAULT' ? 400 : Number(no)
 
-        if (!color || color === c) return // invalid color
-        if (buttonUnsupportedColors.has(themeColor)) return // unsupported
+        if (!color || color === c)
+          return // invalid color
+        if (buttonUnsupportedColors.has(themeColor))
+          return // unsupported
 
         const colorRank = themeColorRank >= 700
           ? { background: 700, hover: 800, active: 900, text: 200 }

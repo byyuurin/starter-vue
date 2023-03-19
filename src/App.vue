@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { title, titleTemplate } from '~/router'
+
 useHead({ title, titleTemplate })
 </script>
 

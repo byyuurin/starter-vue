@@ -1,5 +1,6 @@
-import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 import { ref } from 'vue'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+
 import routes from '~pages'
 
 export const APP_NAME = document.title ?? ''

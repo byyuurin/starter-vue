@@ -1,11 +1,11 @@
 import { resolve } from 'node:path'
-import { defineConfig } from 'vite'
-
-import autoImport from 'unplugin-auto-import/vite'
-import unocss from 'unocss/vite'
-import pages from 'vite-plugin-pages'
 import vue from '@vitejs/plugin-vue'
+import unocss from 'unocss/vite'
+import autoImport from 'unplugin-auto-import/vite'
 import vueComponents from 'unplugin-vue-components/vite'
+import { defineConfig } from 'vite'
+import pages from 'vite-plugin-pages'
+
 import build from './vite.build'
 
 // https://vitejs.dev/config/

@@ -1,0 +1,1 @@
+import{d as n,c as s,t as c,o as a,e as o}from"./assets/index-83e91e41.js";const p={"p-4":""},i=n({__name:"[id]",props:{id:null},setup(t){const e=t;return(r,l)=>(a(),s("div",p,c(e),1))}});typeof o=="function"&&o(i);export{i as default};

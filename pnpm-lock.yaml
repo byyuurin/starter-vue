@@ -5,7 +5,6 @@ specifiers:
   '@iconify/json': ^2.2.54
   '@unocss/eslint-config': ^0.51.6
   '@unocss/reset': ^0.51.6
-  '@unocss/transformer-directives': ^0.51.6
   '@vitejs/plugin-vue': ^4.1.0
   '@vueuse/core': ^10.1.0
   '@vueuse/head': ^1.1.26
@@ -35,7 +34,6 @@ devDependencies:
   '@iconify/json': 2.2.54
   '@unocss/eslint-config': 0.51.6_iacogk7kkaymxepzhgcbytyi7q
   '@unocss/reset': 0.51.6
-  '@unocss/transformer-directives': 0.51.6
   '@vitejs/plugin-vue': 4.1.0_vite@4.3.1+vue@3.2.47
   eslint: 8.39.0
   pnpm: 7.32.2

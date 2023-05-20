@@ -1,7 +1,8 @@
-<route lang="yaml">
-meta:
-  title: Home
-</route>
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Home',
+})
+</script>
 
 <template>
   <div mx-auto p-6 text-center>

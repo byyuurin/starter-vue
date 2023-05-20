@@ -1,9 +1,8 @@
-<route lang="yaml">
-meta:
-  title: Page Not Found
-</route>
-
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Page Not Found',
+})
+
 const router = useRouter()
 </script>
 

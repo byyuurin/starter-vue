@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue Starter</title>
+    <title></title>
   </head>
   <body>
     <div id="app">
@@ -15,6 +15,9 @@
           to { transform: scale3d(1, 1, 1); }
         }
         * { padding: 0; margin: 0; }
+        #app {
+          font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        }
         #app .loading {
           position: fixed;
           z-index: 1;
@@ -47,6 +50,6 @@
         <h2>Loading...</h2>
         <p>This may take a few seconds, please don't close this page.</p>
       </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/entry.ts"></script>
   </body>
 </html>

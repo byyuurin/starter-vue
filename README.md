@@ -1,12 +1,12 @@
 # Vue 3 + TypeScript + Vite + UnoCSS
 
-> Refer to the README of [template-vue-ts](https://github.com/vitejs/vite/blob/main/packages/create-vite/template-vue-ts/README.md) and [vitesse-lite](https://github.com/antfu/vitesse-lite/blob/main/README.md)
+> Refer to the README of [template-vue-ts](https://github.com/vitejs/vite/blob/main/packages/create-vite/template-vue-ts/README.md) and [vitesse](https://github.com/antfu/vitesse/blob/main/README.md)
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
 ## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar) (and disable Vetur)  + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) + [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)+ [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [UnoCSS](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) + [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)+ [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [UnoCSS](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
 
 ## Type Support For `.vue` Imports in TS
 

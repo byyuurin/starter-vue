@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { title, titleTemplate } from '~/router'
-
-useHead({ title, titleTemplate })
+useSeoMeta({
+  titleTemplate: '%s - Vue Starter',
+})
 </script>
 
 <template>

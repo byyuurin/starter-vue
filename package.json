@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@8.4.0",
+  "packageManager": "pnpm@8.5.1",
   "scripts": {
     "build": "vite build",
     "preview": "vite preview --port 80",
@@ -13,27 +13,27 @@
   "dependencies": {
     "@vueuse/core": "^10.1.2",
     "@vueuse/head": "^1.1.26",
-    "vue": "^3.2.47",
-    "vue-router": "^4.1.6"
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.1"
   },
   "devDependencies": {
-    "@byyuurin/eslint-config": "^0.13.2",
-    "@iconify/json": "^2.2.61",
-    "@unocss/eslint-config": "^0.51.12",
-    "@unocss/reset": "^0.51.12",
-    "@vitejs/plugin-vue": "^4.2.1",
-    "eslint": "^8.39.0",
-    "pnpm": "^8.4.0",
+    "@byyuurin/eslint-config": "^0.13.3",
+    "@iconify/json": "^2.2.67",
+    "@unocss/eslint-config": "^0.51.13",
+    "@unocss/reset": "^0.51.13",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.41.0",
+    "pnpm": "^8.5.1",
     "postcss": "^8.4.23",
     "postcss-nested": "^6.0.1",
     "typescript": "^5.0.4",
-    "unocss": "^0.51.12",
+    "unocss": "^0.51.13",
     "unplugin-auto-import": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",
-    "vite": "^4.3.5",
-    "vite-plugin-pages": "^0.29.0",
-    "vitest": "^0.31.0",
-    "vue-tsc": "^1.6.4"
+    "vite": "^4.3.8",
+    "vite-plugin-pages": "^0.29.1",
+    "vitest": "^0.31.1",
+    "vue-tsc": "^1.6.5"
   },
   "eslintConfig": {
     "extends": [

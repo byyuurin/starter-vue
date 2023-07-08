@@ -2,6 +2,7 @@
 /// <reference types="vite-ssg" />
 
 import { resolve } from 'node:path'
+import { unheadVueComposablesImports } from '@unhead/vue'
 import vue from '@vitejs/plugin-vue'
 import unocss from 'unocss/vite'
 import autoImport from 'unplugin-auto-import/vite'
@@ -15,7 +16,7 @@ export default defineConfig({
   plugins: [
     // https://github.com/antfu/unplugin-auto-import
     autoImport({
-      imports: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
+      imports: ['vue', 'vue-router', '@vueuse/core', unheadVueComposablesImports],
       dts: './src/auto-imports.d.ts',
     }),
     // https://github.com/unocss/unocss

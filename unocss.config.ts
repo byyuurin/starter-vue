@@ -2,6 +2,7 @@ import { parseColor } from '@unocss/preset-mini/utils'
 import { defineConfig, presetAttributify, presetIcons, presetWind, transformerDirectives, transformerVariantGroup } from 'unocss'
 
 const buttonUnsupportedColors = new Set(['vue', 'black', 'dark', 'white', 'light'])
+
 function resolveColor(name: string, no: number, prefix?: string) {
   const temp = [prefix, name]
 
@@ -36,6 +37,7 @@ export default defineConfig({
 
         if (!color || color === c)
           return // invalid color
+
         if (buttonUnsupportedColors.has(themeColor))
           return // unsupported
 

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 useSeoMeta({
-  titleTemplate: '%s - Vue Starter',
+  titleTemplate: (title) => [title, 'Vue Starter'].filter(Boolean).join(' - '),
 })
 </script>
 

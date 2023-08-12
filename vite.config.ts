@@ -7,9 +7,9 @@ import vue from '@vitejs/plugin-vue'
 import unocss from 'unocss/vite'
 import autoImport from 'unplugin-auto-import/vite'
 import vueComponents from 'unplugin-vue-components/vite'
+import type { BuildOptions } from 'vite'
 import { defineConfig } from 'vite'
 import pages from 'vite-plugin-pages'
-import build from './vite.build'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -34,8 +34,41 @@ export default defineConfig({
       '@/': `${resolve(__dirname, './src')}/`,
     },
   },
-  build,
+  build: createViteBuildOptions(),
   ssgOptions: {
     dirStyle: 'nested',
   },
 })
+
+// for gh-pages
+function createViteBuildOptions() {
+  const nameREG = /([_])(?:[.]{3})?([^.]+)\1(.css)?/
+  const replace = (template: string, value: string) => template.replace(/\[name\]/, value.replace(nameREG, '$2'))
+
+  const buildOptions: BuildOptions = {
+    rollupOptions: {
+      output: {
+        // https://rollupjs.org/guide/en/#outputassetfilenames
+        assetFileNames: (info) => {
+          const template = 'assets/[name].[hash][extname]'
+
+          if (nameREG.test(info.name))
+            return replace(template, info.name)
+
+          return template
+        },
+        // https://rollupjs.org/guide/en/#outputchunkfilenames
+        chunkFileNames: (info) => {
+          const template = '[name].[hash].js'
+
+          if (nameREG.test(info.name))
+            return replace(template, info.name)
+
+          return template
+        },
+      },
+    },
+  }
+
+  return buildOptions
+}

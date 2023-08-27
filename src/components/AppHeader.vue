@@ -1,12 +1,12 @@
 <template>
-  <nav flex="~ gap-1" sticky top-0 z-20 w-full items-center justify-between px-4 py-2 bg-base color-base shadow="sm gray-500 opacity-10 dark:opacity-20">
-    <RouterLink cursor-pointer select-none text-3xl to="/">
-      <span text-vue>Vue</span>
-      <span pl-2>Starter</span>
+  <nav class="sticky top-0 z-20 w-full flex items-center justify-between gap-1 px-4 py-2 shadow-gray-500 shadow-sm shadow-opacity-10 bg-base color-base dark:shadow-opacity-20">
+    <RouterLink class="cursor-pointer select-none text-3xl" to="/">
+      <span class="text-vue">Vue</span>
+      <span class="pl-2">Starter</span>
     </RouterLink>
-    <div flex="~ gap-2" items-center>
-      <a btn="~ iconify" i-mdi-github text-2xl href="https://github.com/byyuurin/starter-vue" target="_blank"></a>
-      <AppThemeToggle text-2xl />
+    <div class="flex items-center gap-2">
+      <a class="i-mdi-github btn text-2xl btn-iconify" href="https://github.com/byyuurin/starter-vue" target="_blank"></a>
+      <AppThemeToggle class="text-2xl" />
     </div>
   </nav>
 </template>

@@ -1,5 +1,5 @@
 import { parseColor } from '@unocss/preset-mini/utils'
-import { defineConfig, presetAttributify, presetIcons, presetWind, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { defineConfig, presetIcons, presetWind, transformerDirectives, transformerVariantGroup } from 'unocss'
 
 const buttonUnsupportedColors = new Set(['vue', 'black', 'dark', 'white', 'light'])
 
@@ -64,8 +64,8 @@ export default defineConfig({
     ],
   ],
   presets: [
-    presetAttributify(),
     presetIcons({
+      cdn: 'https://esm.sh/',
       extraProperties: {
         'display': 'inline-block',
         'width': '1.2em',

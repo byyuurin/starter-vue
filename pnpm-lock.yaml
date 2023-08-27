@@ -19,9 +19,6 @@ devDependencies:
   '@byyuurin/eslint-config':
     specifier: ^0.15.0
     version: 0.15.0(@typescript-eslint/parser@6.3.0)(eslint@8.47.0)(typescript@5.1.6)
-  '@iconify/json':
-    specifier: ^2.2.101
-    version: 2.2.101
   '@unhead/vue':
     specifier: ^1.2.2
     version: 1.2.2(vue@3.3.4)
@@ -482,13 +479,6 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
-    dev: true
-
-  /@iconify/json@2.2.101:
-    resolution: {integrity: sha512-4otJXRpPYZPVY1IhDZSun8FI5Tk5BBlFYlq5Kl44e/DAG3MGS08fzGwqFUEcG5cbAWMhrQUIGHOhy3kkXxmcJw==}
-    dependencies:
-      '@iconify/types': 2.0.0
-      pathe: 1.1.1
     dev: true
 
   /@iconify/types@2.0.0:

@@ -1,12 +1,6 @@
-<script setup lang="ts">
-useSeoMeta({
-  title: 'Home',
-})
-</script>
-
 <template>
-  <div mx-auto p-6 text-center>
-    <div m-4>
+  <div class="mx-auto p-6 text-center">
+    <div class="m-4">
       <a href="https://vitejs.dev" target="_blank">
         <img src="/vite.svg" class="logo" alt="Vite logo" />
       </a>
@@ -23,7 +17,7 @@ useSeoMeta({
 
 <style lang="postcss">
 .logo {
-  --uno: inline-block h-24 p-6 box-content;
+  --uno: "inline-block h-24 p-6 box-content";
 
   will-change: filter;
   transition: filter 300ms;

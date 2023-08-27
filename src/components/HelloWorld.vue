@@ -10,14 +10,12 @@ const buttonColor = computed(() => colors[Math.floor(count.value / 3)] || 'btn-b
   <h1>
     {{ msg }}
   </h1>
-  <div p-4 py-8>
-    <div flex="~ gap-2" items-start justify-center p-4>
-      <button
-        btn="~" type="button" :class="buttonColor" @click="count++"
-      >
+  <div class="p-4 py-8">
+    <div class="flex items-start justify-center gap-2 p-4">
+      <button class="btn" :class="buttonColor" @click="count++">
         count is: {{ count }}
       </button>
-      <button btn="~ true-gray-50" self-center :disabled="count <= 0" @click="count = 0">
+      <button class="btn self-center btn-true-gray-50" :disabled="count <= 0" @click="count = 0">
         Reset
       </button>
     </div>
@@ -35,25 +33,25 @@ const buttonColor = computed(() => colors[Math.floor(count.value / 3)] || 'btn-b
     <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
     in your IDE for a better DX
   </p>
-  <p text-gray-500>
+  <p class="text-gray-500">
     Click on the Vite, Vue and UnoCSS logos to learn more
   </p>
 </template>
 
 <style scoped>
 h1 {
-  --uno: text-4xl leading-2em;
+  --uno: "text-4xl leading-2em";
 }
 
 p {
-  --uno: leading-2em;
+  --uno: "leading-2em";
 }
 
 a {
-  --uno: text-vue;
+  --uno: "text-vue";
 }
 
 code {
-  --uno: bg-gray-500/10 dark:bg-gray-500/25 text-[#304455] dark:text-light-900 p-4px py-2px rounded-4px;
+  --uno: "bg-gray-500/10 dark:bg-gray-500/25 text-[#304455] dark:text-light-900 p-4px py-2px rounded-4px";
 }
 </style>

@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@byyuurin/eslint-config": "^0.15.0",
-    "@iconify/json": "^2.2.101",
     "@unhead/vue": "^1.2.2",
     "@unocss/eslint-config": "^0.55.0",
     "@unocss/reset": "^0.55.0",

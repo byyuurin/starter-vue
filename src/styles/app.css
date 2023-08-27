@@ -1,38 +1,11 @@
 html, body, #app {
-  --uno: h-full min-h-full antialiased;
+  height: 100%;
 }
 
 html {
-  overflow-y: overlay;
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
-* {
-  scrollbar-width: thin;
+html.dark {
+  color-scheme: dark;
 }
-
-::-webkit-scrollbar {
-  --uno: w-12px bg-transparent;
-}
-
-::-webkit-scrollbar:horizontal {
-  --uno: h-10px;
-}
-
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-corner,
-::-webkit-scrollbar-thumb {
-  --uno: rounded-xl;
-}
-
-::-webkit-scrollbar-thumb {
-  --uno: border-3 border-transparent bg-true-gray-500/10 bg-clip-content;
-}
-::-webkit-scrollbar-thumb:hover {
-  --uno: bg-true-gray-500/25;
-}
-
-::-webkit-scrollbar-thumb:active {
-  --uno: bg-true-gray-500/40;
-}
-

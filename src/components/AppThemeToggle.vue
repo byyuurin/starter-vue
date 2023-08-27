@@ -3,10 +3,5 @@ import { toggleDark } from '~/composables'
 </script>
 
 <template>
-  <button
-    p="!none"
-    btn="~ yellow-50 dark:iconify"
-    i="ph-sun-bold dark:ph-moon-duotone"
-    @click="() => toggleDark()"
-  ></button>
+  <button class="i-ph-sun-bold btn dark:i-ph-moon-duotone btn-yellow-50 dark:btn-iconify p-0!" @click="toggleDark"></button>
 </template>

@@ -48,11 +48,20 @@
           animation: pulse-alt 1s ease-in-out infinite;
         }
       </style>
-      <div class="loading">
-        <img src="/vite.svg" class="animate-pulse-alt" />
-        <h2>Loading...</h2>
-        <p>This may take a few seconds, please don't close this page.</p>
-      </div>
+      <div class="loading"></div>
+      <script>
+        (function () {
+          const loading = document.querySelector('.loading')
+          const logo = document.createElement('img')
+          logo.src = '/vite.svg'
+          logo.className = 'animate-pulse-alt'
+          const h2 = document.createElement('h2')
+          h2.textContent = 'Loading...'
+          const p = document.createElement('p')
+          p.textContent = 'This may take a few seconds, please don\'t close this page.'
+          loading.append(logo, h2, p)
+        })()
+      </script>
     </div>
     <script type="module" src="/src/entry.ts"></script>
   </body>

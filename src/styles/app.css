@@ -2,10 +2,6 @@ html, body, #app {
   height: 100%;
 }
 
-html {
-  color-scheme: light;
-}
-
 html.dark {
   color-scheme: dark;
 }

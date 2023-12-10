@@ -1,9 +1,41 @@
 {
+  // Disable the default formatter, use eslint instead
   "prettier.enable": false,
+  "editor.formatOnSave": false,
+  // Auto fix
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": false,
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never",
   },
-  "eslint.validate": ["json", "jsonc", "yml", "yaml"],
+  // Enable the ESlint flat config support
+  "eslint.experimental.useFlatConfig": true,
+  // Silent the stylistic rules in you IDE, but still auto fix them (if set to "off")
+  // But I prefer setting it to "warn"
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "warn" },
+    { "rule": "format/*", "severity": "warn" },
+    { "rule": "*-indent", "severity": "warn" },
+    { "rule": "*-spacing", "severity": "warn" },
+    { "rule": "*-spaces", "severity": "warn" },
+    { "rule": "*-order", "severity": "warn" },
+    { "rule": "*-dangle", "severity": "warn" },
+    { "rule": "*-newline", "severity": "warn" },
+    { "rule": "*quotes", "severity": "warn" },
+    { "rule": "*semi", "severity": "warn" },
+  ],
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+  ],
+
   "typescript.tsdk": "node_modules/typescript/lib",
 }

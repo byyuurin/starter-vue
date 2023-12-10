@@ -30,7 +30,8 @@ export default defineConfig({
     ['btn-iconify', '!p-0 btn-true-gray-50'],
     ['btn-base', 'btn-teal'],
     [
-      /^btn-(.+)$/, ([match, c], { theme }) => {
+      /^btn-(.+)$/,
+      ([match, c], { theme }) => {
         const { color, no, opacity } = parseColor(c, theme)!
         const themeColor = match.replace(/^btn-(.+)$/, '$1').replace(/([-:/]\d+)+$/, '')
         const themeColorRank = no === 'DEFAULT' ? 400 : Number(no)

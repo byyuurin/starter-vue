@@ -10,7 +10,6 @@
   // Enable the ESlint flat config support
   "eslint.experimental.useFlatConfig": true,
   // Silent the stylistic rules in you IDE, but still auto fix them (if set to "off")
-  // But I prefer setting it to "warn"
   "eslint.rules.customizations": [
     { "rule": "style/*", "severity": "warn" },
     { "rule": "format/*", "severity": "warn" },
@@ -29,12 +28,15 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "vue",
-    "html",
     "markdown",
     "json",
     "jsonc",
     "yaml",
+    "vue",
+    "html",
+    "toml",
+    "css",
+    "postcss"
   ],
 
   "typescript.tsdk": "node_modules/typescript/lib",

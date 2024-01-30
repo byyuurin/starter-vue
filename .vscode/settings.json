@@ -5,7 +5,7 @@
   // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never",
+    "source.organizeImports": "never"
   },
   // Enable the ESlint flat config support
   "eslint.experimental.useFlatConfig": true,
@@ -20,7 +20,7 @@
     { "rule": "*-dangle", "severity": "warn" },
     { "rule": "*-newline", "severity": "warn" },
     { "rule": "*quotes", "severity": "warn" },
-    { "rule": "*semi", "severity": "warn" },
+    { "rule": "*semi", "severity": "warn" }
   ],
   // Enable eslint for all supported languages
   "eslint.validate": [
@@ -39,5 +39,5 @@
     "postcss"
   ],
 
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

@@ -8,16 +8,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - uses: pnpm/action-setup@v2.2.1
+      - uses: actions/checkout@v4
         with:
-          version: 8
+          fetch-depth: 0
 
-      - uses: actions/setup-node@v2
+      - run: corepack enable
+
+      - uses: actions/setup-node@v4
         with:
-          node-version: v16
-          registry-url: https://registry.npmjs.org/
+          node-version: v18
           cache: pnpm
 
       - run: |
@@ -25,7 +24,7 @@ jobs:
           npx vite build --base=/${{ github.event.repository.name }}/
           cp dist/index.html dist/404.html
 
-      - uses: JamesIves/github-pages-deploy-action@4.1.5
+      - uses: peaceiris/actions-gh-pages@v3
         with:
-          BRANCH: gh-pages
-          FOLDER: dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist

@@ -7,20 +7,18 @@
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
-  // Enable the ESlint flat config support
-  "eslint.experimental.useFlatConfig": true,
   // Silent the stylistic rules in you IDE, but still auto fix them (if set to "off")
   "eslint.rules.customizations": [
-    { "rule": "style/*", "severity": "warn" },
-    { "rule": "format/*", "severity": "warn" },
-    { "rule": "*-indent", "severity": "warn" },
-    { "rule": "*-spacing", "severity": "warn" },
-    { "rule": "*-spaces", "severity": "warn" },
-    { "rule": "*-order", "severity": "warn" },
-    { "rule": "*-dangle", "severity": "warn" },
-    { "rule": "*-newline", "severity": "warn" },
-    { "rule": "*quotes", "severity": "warn" },
-    { "rule": "*semi", "severity": "warn" }
+    { "rule": "style/*", "severity": "warn", "fixable": true },
+    { "rule": "format/*", "severity": "warn", "fixable": true },
+    { "rule": "*-indent", "severity": "warn", "fixable": true },
+    { "rule": "*-spacing", "severity": "warn", "fixable": true },
+    { "rule": "*-spaces", "severity": "warn", "fixable": true },
+    { "rule": "*-order", "severity": "warn", "fixable": true },
+    { "rule": "*-dangle", "severity": "warn", "fixable": true },
+    { "rule": "*-newline", "severity": "warn", "fixable": true },
+    { "rule": "*quotes", "severity": "warn", "fixable": true },
+    { "rule": "*semi", "severity": "warn", "fixable": true }
   ],
   // Enable eslint for all supported languages
   "eslint.validate": [

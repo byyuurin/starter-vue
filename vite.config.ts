@@ -1,6 +1,3 @@
-/// <reference types="vitest" />
-/// <reference types="vite-ssg" />
-
 import { resolve } from 'node:path'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import vue from '@vitejs/plugin-vue'
@@ -52,7 +49,7 @@ function createViteBuildOptions() {
         assetFileNames: (info) => {
           const template = 'assets/[name].[hash][extname]'
 
-          if (nameREG.test(info.name))
+          if (info.name && nameREG.test(info.name))
             return replace(template, info.name)
 
           return template

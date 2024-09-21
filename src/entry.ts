@@ -2,10 +2,10 @@ import '@unocss/reset/tailwind-compat.css'
 import 'uno.css'
 import './styles/main.css'
 
+import routes from 'virtual:generated-pages'
 import { ViteSSG } from 'vite-ssg'
-import type { AppPlugin } from '~/types'
-import routes from '~pages'
 import App from './App.vue'
+import type { AppPlugin } from './types'
 
 export const createApp = ViteSSG(
   App,

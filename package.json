@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.15.9",
+  "packageManager": "pnpm@9.11.0",
   "scripts": {
     "build": "vite build",
     "generate": "cross-env vite-ssg build",
@@ -13,37 +13,29 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@vueuse/core": "^10.11.1",
+    "@vueuse/core": "^11.1.0",
     "vue": "^3.5.7",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@byyuurin/eslint-config": "^1.6.0",
-    "@types/node": "^20.16.5",
+    "@types/node": "^22.5.5",
     "@unhead/vue": "^1.11.6",
-    "@unocss/eslint-plugin": "^0.58.9",
-    "@unocss/reset": "^0.58.9",
+    "@unocss/eslint-plugin": "^0.62.4",
+    "@unocss/reset": "^0.62.4",
     "@vitejs/plugin-vue": "^5.1.4",
     "cross-env": "^7.0.3",
-    "eslint": "^8.57.1",
+    "eslint": "^9.11.0",
     "eslint-plugin-format": "^0.1.2",
-    "pnpm": "^8.15.9",
-    "postcss": "^8.4.47",
-    "postcss-nested": "^6.2.0",
+    "pnpm": "^9.11.0",
     "typescript": "^5.6.2",
-    "unocss": "^0.58.9",
-    "unplugin-auto-import": "^0.17.8",
-    "unplugin-vue-components": "^0.26.0",
+    "unocss": "^0.62.4",
+    "unplugin-auto-import": "^0.18.3",
+    "unplugin-vue-components": "^0.27.4",
     "vite": "^5.4.7",
     "vite-plugin-pages": "^0.32.3",
     "vite-ssg": "^0.23.8",
-    "vitest": "^1.6.0",
+    "vitest": "^2.1.1",
     "vue-tsc": "^2.1.6"
-  },
-  "postcss": {
-    "map": false,
-    "plugins": {
-      "postcss-nested": {}
-    }
   }
 }

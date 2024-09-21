@@ -21,15 +21,17 @@
 
   will-change: filter;
   transition: filter 300ms;
-}
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-.logo.unocss:hover {
-  filter: drop-shadow(0 0 2em #616161aa);
+  &:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+
+  &.vue:hover {
+    filter: drop-shadow(0 0 2em #42b883aa);
+  }
+
+  &.unocss:hover {
+    filter: drop-shadow(0 0 2em #616161aa);
+  }
 }
 </style>

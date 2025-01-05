@@ -1,0 +1,1 @@
+import{d as t,j as a,h as s,a as o,t as r,u as n,o as i}from"./assets/index-wzUp-PTu.js";const p={class:"p-4"},d=t({__name:"[id]",setup(c){const e=a();return s({title:"Dynamic Page with `props.id` or `route.params.id`"}),(u,_)=>(i(),o("div",p,r(n(e).params),1))}});export{d as default};

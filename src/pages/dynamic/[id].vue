@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-const props = defineProps<{
-  id: string
-}>()
+const route = useRoute('/dynamic/[id]')
 
 useSeoMeta({
   title: 'Dynamic Page with `props.id` or `route.params.id`',
@@ -10,6 +8,6 @@ useSeoMeta({
 
 <template>
   <div class="p-4">
-    {{ props }}
+    {{ route.params }}
   </div>
 </template>

@@ -14,8 +14,8 @@
     "types": [
       "vite/client",
       "vite-ssg",
-      "vite-plugin-pages/client",
-      "vitest"
+      "vitest",
+      "unplugin-vue-router/client"
     ],
     "allowImportingTsExtensions": true,
     "allowJs": true,

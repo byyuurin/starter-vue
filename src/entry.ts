@@ -2,8 +2,8 @@ import '@unocss/reset/tailwind-compat.css'
 import 'uno.css'
 import './styles/main.css'
 
-import routes from 'virtual:generated-pages'
 import { ViteSSG } from 'vite-ssg'
+import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
 import type { AppPlugin } from './types'
 

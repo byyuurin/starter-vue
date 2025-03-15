@@ -1,1 +1,0 @@
-import{d as t,j as a,h as s,a as o,o as r,t as n,u as i}from"./assets/index-B97GOKTe.js";const p={class:"p-4"},d=t({__name:"[id]",setup(c){const e=a();return s({title:"Dynamic Page with `props.id` or `route.params.id`"}),(u,_)=>(r(),o("div",p,n(i(e).params),1))}});export{d as default};

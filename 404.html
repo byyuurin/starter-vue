@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/starter-vue/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <script type="module" crossorigin src="/starter-vue/assets/index-B97GOKTe.js"></script>
-    <link rel="stylesheet" crossorigin href="/starter-vue/assets/index.i6w3i2kg.css">
+    <script type="module" crossorigin src="/starter-vue/assets/index-Co3gT_pY.js"></script>
+    <link rel="stylesheet" crossorigin href="/starter-vue/assets/index.nchsxemY.css">
   </head>
   <body>
     <div id="app">
@@ -73,21 +73,11 @@
           animation: pulse-alt 1s ease-in-out infinite;
         }
       </style>
-      <div class="loading"></div>
-      <script>
-        ;(function () {
-          const loading = document.querySelector(".loading")
-          const logo = document.createElement("img")
-          logo.src = "vite.svg"
-          logo.className = "animate-pulse-alt"
-          const h2 = document.createElement("h2")
-          h2.textContent = "Loading..."
-          const p = document.createElement("p")
-          p.textContent =
-            "This may take a few seconds, please don't close this page."
-          loading.append(logo, h2, p)
-        })()
-      </script>
+      <div class="loading">
+        <img src="/starter-vue/vite.svg" alt="logo" />
+        <h2>Loading...</h2>
+        <p>This may take a few seconds, please don't close this page.</p>
+      </div>
     </div>
   </body>
 </html>
